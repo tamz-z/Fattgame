@@ -1,6 +1,8 @@
 body {
     background-color: #89CCEA;
-
+    width: 100vw;
+    color: white;
+    font-family: K;
 }
 
 * {
@@ -33,8 +35,7 @@ body {
 .spaceverder {
     background-color: #20929E;
     height: 800px;
-    position: relative;
-    top: 5px;
+    margin-top: -7px;
 }
 
 .navtekst {
@@ -46,12 +47,39 @@ body {
 
 }
 
+.positiontekst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 h1 {
     display: flex;
     text-align: center;
     font-family: 'Karantina', system-ui;
     color: white;
     font-size: 40px;
+}
+
+h2 {
+    display: flex;
+    text-align: center;
+    font-family: 'Karantina', system-ui;
+    color: white;
+    font-size: 150px;
+}
+
+h3 {
+    display: flex;
+    text-align: center;
+    font-family: 'Karantina';
+    color: white;
+    font-weight: 100;
+    font-size: 39px;
+    position: relative;
+    top: 10px;
+    width: 50%;
 }
 
 .teks {
@@ -70,14 +98,30 @@ h1 {
 
 .sant {
     margin-top: -7px;
-    height: 500px;
-    background-color: #EF9E47;
+    height: 1000px;
+    background: linear-gradient(to bottom, #9e4f24 0%, #fda318 100%);
+}
+
+.bosnaaruimte {
+    margin-top: -7px;
+    height: 300px;
+    background: linear-gradient(to bottom, #593906 0%, #251A19 100%);
 }
 
 .bos {
     height: 1700px;
     background-color: greenyellow;
+    display: flex;
+    justify-content: space-around;
 }
+
+
+.sjop {
+    height: 450px;
+    width: 400px;
+    background-color: lightcoral;
+}
+
 
 .ruimteovergang {
     background: linear-gradient(84deg,
@@ -86,22 +130,21 @@ h1 {
             #807c92 99.17%);
     height: 1800px;
     margin-top: -5px;
-    width: 100%;
 }
 
-
-
-.overgangbos {
-    background: linear-gradient(to bottom, #ef9e47 0%, #fda318 100%);
-    height: 400px;
+.zandnaarzon {
+    background: linear-gradient(to bottom, #9E4F24 0%, #FDA318 100%);
+    height: 1000px;
+    width: 500px;
 }
+
 
 .cm {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+
 }
 
 
@@ -148,11 +191,18 @@ h1 {
 
 
 .fotorondje {
-    background-color: rgb(0, 0, 0);
-    width: 300px;
+    width: 200px;
     height: 300px;
-    border-radius: 300px;
+    border-radius: 200px;
 }
+
+
+.shop-block {
+    display: flex;
+    justify-content: space-around;
+
+}
+
 
 .header {
     position: relative;
@@ -161,6 +211,7 @@ h1 {
 }
 
 
+ 
 .flex {
     /*Flexbox for containers*/
     display: flex;
@@ -214,7 +265,6 @@ h1 {
         transform: translate3d(85px, 0, 0);
     }
 }
-
 
 .blauw-footer {
     height: 600px;
@@ -312,6 +362,12 @@ a {
     color: rgb(255, 255, 255);
 }
 
+footer{
+    position: relative;
+  top: 4547px;
+}
+
+
 button {
     position: relative;
     border: none;
@@ -352,6 +408,7 @@ button {
 }
 
 .front {
+    justify-content: space-between;
     display: block;
     position: relative;
     padding: 12px 27px;
@@ -364,6 +421,45 @@ button {
     transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
 }
 
+.Container{
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+.Homecontainer{
+    position: relative;
+    width: 100%;
+    height: 1020px;
+}
+.Homecontainer p{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-family: 'Karantina', system-ui;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 200px;
+    font-weight: 500;
+}
+.Container img{
+    width: 300px;
+    height: 400px;
+}
+.Container button{
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+.Container p{
+    position: absolute;
+    top: 67%;
+    left: 10%;
+    font-family: 'Karantina', system-ui;
+    color: #D05D14;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 500;
+}
 button:hover {
     filter: brightness(110%);
 }
